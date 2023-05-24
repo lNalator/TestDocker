@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  testdocker:
+    image: testdocker
+    build: .
+    volumes:
+      - ./src:/var/www/html
+    ports:
+      - 8080:80
